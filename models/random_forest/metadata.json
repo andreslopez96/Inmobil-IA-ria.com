@@ -1,0 +1,7 @@
+{
+  "name": "random_forest",
+  "family": "RandomForestRegressor",
+  "availability": "not_published",
+  "feature_groups": ["superficie", "distribución", "estado", "equipamiento", "ubicación codificada"],
+  "redacted": ["model_binary", "exact_feature_schema", "metrics", "training_data"]
+}

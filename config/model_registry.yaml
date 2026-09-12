@@ -1,0 +1,34 @@
+{
+  "public_portfolio": true,
+  "note": "Pesos, métricas y esquemas entrenados se han retirado de la edición pública.",
+  "models": [
+    {
+      "name": "random_forest",
+      "family": "RandomForestRegressor",
+      "output": "Predicción_RF",
+      "active": false,
+      "availability": "not_published"
+    },
+    {
+      "name": "bagging",
+      "family": "BaggingRegressor",
+      "output": "Predicción_Bagging",
+      "active": false,
+      "availability": "not_published"
+    },
+    {
+      "name": "gradient_boosting",
+      "family": "GradientBoostingRegressor",
+      "output": "Predicción_GB",
+      "active": false,
+      "availability": "not_published"
+    },
+    {
+      "name": "svr",
+      "family": "SVR",
+      "output": "Predicción_SVR",
+      "active": false,
+      "availability": "not_published"
+    }
+  ]
+}

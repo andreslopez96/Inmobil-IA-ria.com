@@ -1,0 +1,55 @@
+{
+  "thresholds": {
+    "prime": {
+      "areas": [
+        "actur",
+        "centro",
+        "grancasa",
+        "almozara",
+        "pol universidad romareda",
+        "doctor cerrada",
+        "universidad san francisco",
+        "paseo sagasta",
+        "paseo independencia",
+        "casco historico",
+        "alfonso",
+        "paseo de la constitucion"
+      ],
+      "bands": [
+        {"min_price_inclusive": 90000, "max_price_exclusive": 180000, "ratio": 0.25},
+        {"min_price_inclusive": 180000, "max_price_inclusive": 500000, "ratio": 0.15}
+      ],
+      "default_ratio": 0.0
+    },
+    "secondary": {
+      "areas": [
+        "ranillas",
+        "la magdalena",
+        "plaza de toros",
+        "el zorongo",
+        "barrio del ave",
+        "casablanca",
+        "mercado san valero",
+        "parque delicias - la bozada",
+        "arrabal",
+        "miralbueno"
+      ],
+      "bands": [
+        {"min_price_inclusive": 90000, "max_price_exclusive": 150000, "ratio": 0.40},
+        {"min_price_inclusive": 150000, "max_price_inclusive": 500000, "ratio": 0.33}
+      ],
+      "default_ratio": 0.0
+    },
+    "default": {
+      "areas": [],
+      "bands": [
+        {"min_price_inclusive": 90000, "max_price_exclusive": 150000, "ratio": 0.60},
+        {"min_price_inclusive": 150000, "max_price_inclusive": 500000, "ratio": 0.45}
+      ],
+      "default_ratio": 0.0
+    }
+  },
+  "candidate_price_min": 90000,
+  "candidate_price_max": 500000,
+  "selected_values": ["1", "true", "yes", "si", "x"]
+}

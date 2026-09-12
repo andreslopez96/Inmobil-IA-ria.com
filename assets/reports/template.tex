@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[left=2.2cm,right=2.2cm,top=2.3cm,bottom=2.4cm]{geometry}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{siunitx}
+\sisetup{locale=FR,group-separator={.},output-decimal-marker={,}}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{2A9D8F}
+\definecolor{soft}{HTML}{EEF6F5}
+\hypersetup{colorlinks=true,urlcolor=teal}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+
+\begin{document}
+
+{\color{teal}\rule{\textwidth}{3pt}}
+
+{\Huge\bfseries\color{navy} Informe inmobiliario}\par
+{\Large {{TITULO}}}\par
+{\color{teal}\large {{LOCALIZACION}}, Zaragoza}
+
+\vspace{0.8cm}
+\begin{tabular}{@{}p{0.42\textwidth}p{0.50\textwidth}@{}}
+\toprule
+\rowcolor{soft}
+\textbf{Referencia} & {{ID}} \\
+\textbf{Precio anunciado} & \num{{{PRECIO}}} € \\
+\rowcolor{soft}
+\textbf{Superficie construida} & {{M2_CONSTRUIDOS}} m² \\
+\textbf{Superficie útil} & {{M2_UTIL}} m² \\
+\rowcolor{soft}
+\textbf{Habitaciones / baños} & {{HABITACIONES}} / {{BANOS}} \\
+\textbf{Estado} & {{ESTADO}} \\
+\rowcolor{soft}
+\textbf{Ascensor} & {{ASCENSOR}} \\
+\textbf{Calefacción} & {{CALEFACCION}} \\
+\rowcolor{soft}
+\textbf{Año de construcción} & {{ANO}} \\
+\bottomrule
+\end{tabular}
+
+\section*{Estimación del modelo}
+
+La combinación ponderada de los modelos sitúa el valor orientativo en
+\textbf{\num{{{ESTIMACION}}} €}, con un intervalo de referencia de
+\textbf{{{INTERVALO}}}.
+
+\section*{Trazabilidad}
+
+El resultado procede de un pipeline reproducible de validación, transformación,
+predicción y reglas de matching. La decisión final requiere revisión humana.
+
+\section*{Aviso}
+
+Este documento es una demostración técnica. No constituye una tasación ni una
+recomendación financiera. Debe contrastarse con información autorizada y con un
+profesional cualificado.
+
+\vfill
+{\small\color{navy}Generado por Inmobil-IA-ria · \today}
+
+\end{document}
